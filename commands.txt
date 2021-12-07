@@ -1,0 +1,74 @@
+  463  cd QA_Lachestry_vtitov/
+  464  git push -all origin
+  465  git push --all origin
+  466  git branch
+  467  git checkout bossmode 
+  468  git merge main 
+  469  git push --all origin
+  470  git checkout main 
+  471  git status
+  472  echo 'This File of main branch!' > Lalalal.txt
+  473  ls -l
+  474  git status
+  475  git add Lalalal.txt 
+  476  git commit -m 'Creating Lalalal.txt'
+  477  git push
+  478  git status
+  479  git diff
+  480  git log oneline
+  481  git log --oneline
+  482  git checkout bossmode 
+  483  touch Gooky.txt 
+  484  ls -l
+  485  git commit Gooky.txt -m 'Creating Gooky.txt'
+  486  git status
+  487  git add Gooky.txt 
+  488  git commit 'Add Gooky.txt to branch bossmode' 
+  489  git commit -m 'Add Gooky.txt to branch bossmode' 
+  490  git push 
+  491  git push --all origin
+  492  git merge main 
+  493  git push --all origin
+  494  git switch -
+  495  git status
+  496  git branch -r
+  497  git pull
+  498  git branch
+  499  git log --oneline
+  500  git checkout bossmode 
+  501  git log --oneline
+  502  git reset --hard HEAD~1
+  503  git log --oneline
+  504  git push all --origin
+  505  git push --all origin
+  506  git status
+  507  git checkout main 
+  508  git log --oneline
+  509  git status
+  510  git push --all origin
+  511  git merge bossmode 
+  512  git status
+  513  git push --all origin
+  514  git log --oneline
+  515  git reset --hard HEAD~1
+  516  git status
+  517  git push -all origin
+  518  git push all --origin
+  519  git push --all origin
+  520  git push
+  521  git pull
+  522  git push --all origin
+  523  git checkout bossmode 
+  524  git pull
+  525  git status
+  526  git switch -
+  527  git push --all origin
+  528  git checkout main 
+  529  git checkout bossmode 
+  530  git push --all origin
+  531  git pull
+  532  git push --all origin
+  533  git push
+  534  git reflog
+  535  cd QA_Lachestry_vtitov/
+  536  history
