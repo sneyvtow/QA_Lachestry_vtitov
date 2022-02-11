@@ -311,6 +311,10 @@ html {
     width: calc((100% / 2) - 10px);
 }
 
+.perfume_promo .perfume_promo_wrapper .perfume_promo_item:nth-child(2n) {
+    padding: calc(100% / 9,6) 0;
+}
+
 .perfume_promo .perfume_promo_wrapper .perfume_promo_item .txt__wrapper {
     align-items: flex-start;
 }
