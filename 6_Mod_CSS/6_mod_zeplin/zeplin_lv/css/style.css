@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
-
+/* @import url('/js/js.js'); */
 
 *,
 *:before,
@@ -11,23 +11,21 @@
 
 html {
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 62.5%;
+    font-size: 62.5%; /* ~10 px */ 
 }
 
-.page {
-    overflow: hidden; /* Anti-Horizontal Scroll*/
-}
-.container {
+/* Desktop 1440px x height */
+
+.container {    /* Aligns everything in the center and adds padding */
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
-    padding: 0 120px;
-    max-width: 1440px;
+    padding: 0 12rem;   
 }
 
-.inner_container {
-    max-width: 730px;
+.inner_container { /* Align headings and subheadings to the center line size  */
+    max-width: 73rem;
     margin: 0 auto;
-    /* padding: 56px 0; */
 }
 
 .txt__wrapper {
@@ -38,8 +36,8 @@ html {
 }
 
 .header {
-    min-height: 60px;
-    padding: 15px 0;
+    min-height: 6rem;
+    padding: 1.5rem 0;
     background-color: #fff;
     margin: 0;
 
@@ -47,7 +45,7 @@ html {
 
 .header .header_nav_list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -55,11 +53,28 @@ html {
 
 .header .header_nav_list .header_nav_item {
     list-style: none;
-    margin-right: 32px;
 }
 
 .header .header_nav_list .header_nav_item a {
-    font-size: 14px;
+    text-decoration: none;
+}
+
+.header .header_nav_list .header_nav_item .link_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .header_nav_list .header_nav_item .link_block .link_block_item {
+    list-style: none;
+    margin-right: 3.2rem;
+}
+.header .header_nav_list .header_nav_item .link_block .link_block_item:last-child {
+    margin-right: 0;
+}
+
+.header .header_nav_list .header_nav_item .link_block .link_block_item a {
+    font-size: 1.4rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -70,29 +85,23 @@ html {
     text-transform: uppercase;
     /* transition: all 200ms ease-in; */
     text-decoration: none;
-    list-style: none;
 }
 
-.header .header_nav_list .header_nav_item a:hover {
+.header .header_nav_list .header_nav_item .link_block .link_block_item a:hover {
     text-decoration: underline;
-    /* font-size: 16px; */
 }
-
-.header .header_nav_list .header_nav_item:first-child {
-    margin-right: auto;
-}
-
-.header .header_nav_list .header_nav_item:last-child {
-    margin-right: 0;
+.header .header_nav_list .header_nav_item a {
+    /* transition: all 200ms ease-in; */
+    text-decoration: none;
 }
 
 
 
 
 .promo_bagcollection {
-    min-height: 320px;
+    min-height: 32rem;
     background: url('/img/promo_bagcolliction/bg_bagcolliction@3x.png') top center/cover no-repeat; /* Background */
-    padding: 58px 0;
+    padding: 5.8rem 0;
 }
 
 
@@ -100,7 +109,7 @@ html {
 .promo_bagcollection .inner_container .txt__wrapper .promo_bagcollection_title {
     margin: 0;
     flex-grow: 0;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -113,15 +122,15 @@ html {
 }
 
 .promo_bagcollection .inner_container .txt__wrapper .promo_bagcollection_button {
-    min-width: 297px;
-    min-height: 52px;
+    min-width: 29.7rem;
+    min-height: 5.2rem;
     background-color: #fff;
-    margin: 24px auto 0 auto;
-    padding: 12px 21px;
+    margin: 2.4rem auto 0 auto;
+    padding: 1.2rem 2.1rem;
     border: 0;
     flex-grow: 0;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -138,13 +147,13 @@ html {
     background: #000;
 }
 .newseason {
-    min-height: 176px;
-    padding-top: 56px;
+    min-height: 17.6rem;
+    padding-top: 5.6rem;
 }
 
 .newseason .inner_container .txt__wrapper .newseason_title, .perfume .inner_container .txt__wrapper .perfume_title {
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -156,7 +165,7 @@ html {
 }
 
 .newseason .inner_container .txt__wrapper .newseason_subtitle, .perfume .inner_container .txt__wrapper .perfume_subtitle {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
@@ -165,27 +174,28 @@ html {
     text-align: center;
     color: #000;
 
-    margin-top: 8px;
-    padding: 0 24px;
+    margin-top: 0.8rem;
+    padding: 0 2.4rem;
 }
 .product_slider {
-    min-height: 361px;
-    padding-top: 56px;
-    margin-bottom: 24px;
+    min-height: 36.1rem;
+    padding-top: 5.6rem;
+    margin-bottom: 2.4rem;
 }
 
 .product_slider .product_slider_wrapper  {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
 }
 
 .product_slider .product_slider_wrapper .product_slider_item {
-    width: 285px;
-    margin-left: 20px;
+    width: calc((100% / 4) - 2rem);
+    margin-right: 2rem;
 }
-.product_slider .product_slider_wrapper .product_slider_item:first-of-type {
-    margin-left: 0;
+.product_slider .product_slider_wrapper .product_slider_item:last-child {
+    margin-right: 0;
 }
 .product_slider .product_slider_wrapper .product_slider_item a {
     text-decoration: none;
@@ -195,9 +205,9 @@ html {
 }
 
 .product_slider .product_slider_wrapper .product_slider_descr {
-    margin-top: 16px;
+    margin-top: 1.6rem;
 
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -208,8 +218,8 @@ html {
 }
 
 .product_slider .product_slider_wrapper .product_slider_price {
-    margin-top: 8px;
-    font-size: 18px;
+    margin-top: 0.8rem;
+    font-size: 1.8rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -224,13 +234,13 @@ html {
 }
 
 .capucines {
-    min-height: 228px;
-    padding-top: 56px;
-    margin-bottom: 8px;
+    min-height: 22.8rem;
+    padding-top: 5.6rem;
+    margin-bottom: 0.8rem;
 }
 
 .capucines .inner_container .capucines_title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -241,8 +251,8 @@ html {
 }
 
 .capucines_block {
-    min-height: 746px;
-    padding-top: 56px;
+    min-height: 74.6rem;
+    padding-top: 5.6rem;
 }
 
 .capucines_block .container {
@@ -255,20 +265,22 @@ html {
 }
 
 .capucines_block .capucines_block_wrapper .capucines_block_item {
-    width: 710px;
-    margin-left: 20px;
-}
-
-.capucines_block .capucines_block_wrapper .capucines_block_item:first-of-type {
-    margin: 0;
-    padding: 0 86px;
+    width: 71rem;
+    margin-right: 2rem;
+    padding: 0 8.6rem;
     background: #ede7da;
     display: flex;
+}
+
+.capucines_block .capucines_block_wrapper .capucines_block_item:last-child {
+    margin: 0;
+    padding: 0;
+    background: #ede7da;
 
 }
 
 .capucines_block .capucines_block_wrapper .capucines_block_item .capucines_block_descr {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -287,13 +299,13 @@ html {
 }
 
 .perfume {
-    min-height: 210px;
-    padding-top: 56px;
+    min-height: 21rem;
+    padding-top: 5.6rem;
 }
 
 .perfume_promo {
-    min-height: 344px;
-    padding-top: 56px;
+    min-height: 34.4rem;
+    padding-top: 5.6rem;
 }
 .perfume_promo .perfume_promo_wrapper {
     display: flex;
@@ -308,10 +320,10 @@ html {
 .perfume_promo .perfume_promo_wrapper .perfume_promo_item {
     display: flex;
     align-items: center;
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 2) - 2.1rem);
 }
 
-.perfume_promo .perfume_promo_wrapper .perfume_promo_item:nth-child(2n) {
+.perfume_promo .perfume_promo_wrapper .perfume_promo_item:nth-child(2n) { /* ~61px ~ 6.1rem */
     padding: calc(100% / 9,6) 0;
 }
 
@@ -326,7 +338,7 @@ html {
 .perfume_promo .perfume_promo_wrapper .perfume_promo_title {
     flex-grow: 0;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -338,7 +350,7 @@ html {
 .perfume_promo .perfume_promo_wrapper .perfume_promo_descr {
     flex-grow: 0;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -350,16 +362,16 @@ html {
 }
 
 .perfume_promo .perfume_promo_wrapper .perfume_promo_buy_button {
-    margin-top: 32px;
-    padding: 8px 16px;
+    margin-top: 3.2rem;
+    padding: 0.8rem 1.6rem;
     border: none;
     outline: none;
     text-align: center;
-    min-width: 96px;
-    min-height: 44px;
+    min-width: 9.6rem;
+    min-height: 4.4rem;
     background: #000;
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     border: 0;
     border-radius: 0;
     font-family: Montserrat;
@@ -373,25 +385,25 @@ html {
 
 
 .footer {
-    min-height: 216px;
+    min-height: 21.6rem;
     background: black;
     color: #fff;
-    margin-top: 56px;
-    padding-top: 40px;
+    margin-top: 5.6rem;
+    padding-top: 4rem;
 }
 
 .footer .lv_logo {
     filter: invert(100%);
 }
 .footer_divider {
-    height: 1px;
+    height: 0.1rem;
     background-color: rgba(255, 255, 255, 0.4);
     border: none;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .footer .row {
-    padding-top: 40px;
+    padding-top: 4rem;
 }
 
 
@@ -403,11 +415,11 @@ html {
 
 .footer .row .footer_nav_list .footer_item {
     list-style: none;
-    margin-right: 32px;
+    margin-right: 3.2rem;
 }
 
 .footer .row .footer_nav_list .footer_item a {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-decoration: none;
     color: #fff;
 
@@ -425,10 +437,86 @@ html {
     text-decoration: underline;
 }
 .footer .row .footer_nav_list .footer_item:first-child {
-    margin-right: 8px;
-    padding-top: 6px;
+    margin-right: 0.8rem;
+    padding-top: 0.6rem;
 }
 
 .footer .row .footer_nav_list .footer_item:last-child {
     margin-right: 0;
+}
+
+/* Decktop width >1024px */
+
+@media screen and (min-width: 1441px) and (orientation: landscape) {
+
+    .container {    /* Aligns everything in the center and adds padding */
+        padding: 0 120px;   
+    }
+}
+
+/* Tablet width (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container {
+        max-width: 1024px;
+        padding: 0 8.5rem;   
+    }
+    .header .header_nav_list {
+        display: block;
+    
+    }
+    
+
+    /* .header .header_nav_list .header_nav_item:nth-child(n+2) {
+        margin-top: 2rem;
+    }
+    
+    .header .header_nav_list .header_nav_item .link_block {
+        justify-content: center;
+    } */
+    /*
+    .header .header_nav_list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    }
+    
+    
+    .header .header_nav_list .header_nav_item {
+        list-style: none;
+        margin-right: 3.2rem;
+    }
+    .header .header_nav_list .header_nav_item:first-child {
+
+    }
+    
+    .header .header_nav_list .header_nav_item a {
+        font-size: 1.4rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000;
+        
+        text-transform: uppercase;
+
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .header .header_nav_list .header_nav_item a:hover {
+        text-decoration: underline;
+
+    }
+    
+    
+    .header .header_nav_list .header_nav_item:last-child {
+        margin-right: 0;
+    } */
+}
+
+/* Mobile width <768px */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
 }
