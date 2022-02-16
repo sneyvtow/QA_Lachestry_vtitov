@@ -1,0 +1,1 @@
+// document.getElementsByClassName('.product_slider_item').length
