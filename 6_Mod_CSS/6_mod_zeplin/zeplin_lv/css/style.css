@@ -95,6 +95,12 @@ html {
     text-decoration: none;
 }
 
+.header .header_nav_list .header_nav_item .header_hamburger {
+    width: 1.8rem;
+    display: none;
+
+}
+
 .promo_bagcollection {
     min-height: 32rem;
     background: url('/img/promo_bagcolliction/bg_bagcolliction@3x.png') top center/cover no-repeat; /* Background */
@@ -679,6 +685,9 @@ html {
         display: none;
     }
     
+    .header .header_nav_list .header_nav_item .header_hamburger {
+        display: block;
+    }
     /* .header .header_nav_list .header_nav_item:last-child {
         margin-top: 2rem;
     } */
